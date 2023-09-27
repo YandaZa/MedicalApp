@@ -451,13 +451,14 @@ Partial Class HOTLINE
         BackColor = Color.CadetBlue
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(865, 496)
+        ControlBox = False
         Controls.Add(btnHome)
         Controls.Add(PictureBox10)
         Controls.Add(Label1)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "HOTLINE"
-        Text = "HOTLINE"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()

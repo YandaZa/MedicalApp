@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class LOGIN
+Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,186 +22,173 @@ Partial Class LOGIN
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
-        Label1 = New Label()
-        txtUsername = New TextBox()
-        PictureBox2 = New PictureBox()
-        txtPassword = New TextBox()
-        PictureBox3 = New PictureBox()
-        LinkLabel1 = New LinkLabel()
-        btnLogin = New Button()
-        btnSignUp = New Button()
-        lblTandC = New LinkLabel()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Login))
         PictureBox1 = New PictureBox()
-        ToolTip1 = New ToolTip(components)
-        chkRemember = New CheckBox()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1 = New Panel()
+        pbClossApp = New PictureBox()
+        PictureBox3 = New PictureBox()
+        PictureBox2 = New PictureBox()
+        btnCreateAccount = New Button()
+        btnLogin = New Button()
+        txtPassword = New TextBox()
+        txtID = New TextBox()
+        Label2 = New Label()
+        Label1 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
+        CType(pbClossApp, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.live
+        PictureBox1.Location = New Point(210, 18)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(417, 159)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 0
+        PictureBox1.TabStop = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Teal
+        Panel1.Controls.Add(pbClossApp)
+        Panel1.Controls.Add(PictureBox3)
+        Panel1.Controls.Add(PictureBox2)
+        Panel1.Controls.Add(btnCreateAccount)
+        Panel1.Controls.Add(btnLogin)
+        Panel1.Controls.Add(txtPassword)
+        Panel1.Controls.Add(txtID)
+        Panel1.Controls.Add(Label2)
+        Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(PictureBox1)
+        Panel1.Location = New Point(12, 12)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(858, 465)
+        Panel1.TabIndex = 0
+        ' 
+        ' pbClossApp
+        ' 
+        pbClossApp.Image = CType(resources.GetObject("pbClossApp.Image"), Image)
+        pbClossApp.Location = New Point(792, 18)
+        pbClossApp.Name = "pbClossApp"
+        pbClossApp.Size = New Size(52, 50)
+        pbClossApp.TabIndex = 7
+        pbClossApp.TabStop = False
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Image = My.Resources.Resources.medical_care
+        PictureBox3.Location = New Point(332, 216)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(29, 26)
+        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox3.TabIndex = 6
+        PictureBox3.TabStop = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = My.Resources.Resources.padlock
+        PictureBox2.Location = New Point(336, 274)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(25, 26)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 5
+        PictureBox2.TabStop = False
+        ' 
+        ' btnCreateAccount
+        ' 
+        btnCreateAccount.BackColor = Color.CadetBlue
+        btnCreateAccount.FlatStyle = FlatStyle.Flat
+        btnCreateAccount.Location = New Point(376, 351)
+        btnCreateAccount.Name = "btnCreateAccount"
+        btnCreateAccount.Size = New Size(120, 30)
+        btnCreateAccount.TabIndex = 4
+        btnCreateAccount.Text = "&Create account"
+        btnCreateAccount.UseVisualStyleBackColor = False
+        ' 
+        ' btnLogin
+        ' 
+        btnLogin.BackColor = Color.CadetBlue
+        btnLogin.FlatStyle = FlatStyle.Flat
+        btnLogin.Location = New Point(396, 315)
+        btnLogin.Name = "btnLogin"
+        btnLogin.Size = New Size(75, 30)
+        btnLogin.TabIndex = 3
+        btnLogin.Text = "&Login"
+        btnLogin.UseVisualStyleBackColor = False
+        ' 
+        ' txtPassword
+        ' 
+        txtPassword.BackColor = Color.CadetBlue
+        txtPassword.BorderStyle = BorderStyle.FixedSingle
+        txtPassword.Location = New Point(367, 277)
+        txtPassword.MaxLength = 20
+        txtPassword.Name = "txtPassword"
+        txtPassword.Size = New Size(149, 23)
+        txtPassword.TabIndex = 2
+        ' 
+        ' txtID
+        ' 
+        txtID.BackColor = Color.CadetBlue
+        txtID.BorderStyle = BorderStyle.FixedSingle
+        txtID.Location = New Point(367, 219)
+        txtID.MaxLength = 13
+        txtID.Name = "txtID"
+        txtID.Size = New Size(149, 23)
+        txtID.TabIndex = 1
+        txtID.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(412, 259)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(59, 15)
+        Label2.TabIndex = 0
+        Label2.Text = "Password"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Mongolian Baiti", 18F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.ForeColor = Color.Black
-        Label1.Location = New Point(350, 200)
+        Label1.Location = New Point(412, 201)
         Label1.Name = "Label1"
-        Label1.Size = New Size(116, 25)
-        Label1.TabIndex = 1
-        Label1.Text = "SIGN IN..."
+        Label1.Size = New Size(52, 15)
+        Label1.TabIndex = 0
+        Label1.Text = " User ID"
         ' 
-        ' txtUsername
-        ' 
-        txtUsername.BackColor = Color.White
-        txtUsername.Location = New Point(300, 238)
-        txtUsername.Name = "txtUsername"
-        txtUsername.PlaceholderText = "USERNAME"
-        txtUsername.Size = New Size(229, 23)
-        txtUsername.TabIndex = 4
-        ToolTip1.SetToolTip(txtUsername, "Enter Username")
-        ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.BackColor = Color.Transparent
-        PictureBox2.Image = My.Resources.Resources.user__1_
-        PictureBox2.Location = New Point(260, 232)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(34, 34)
-        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox2.TabIndex = 3
-        PictureBox2.TabStop = False
-        ' 
-        ' txtPassword
-        ' 
-        txtPassword.BackColor = Color.White
-        txtPassword.Location = New Point(300, 299)
-        txtPassword.Name = "txtPassword"
-        txtPassword.PlaceholderText = "PASSWORD"
-        txtPassword.Size = New Size(229, 23)
-        txtPassword.TabIndex = 4
-        ToolTip1.SetToolTip(txtPassword, "Enter Password")
-        ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.BackColor = Color.Transparent
-        PictureBox3.Image = My.Resources.Resources.padlock
-        PictureBox3.Location = New Point(260, 293)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(34, 34)
-        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox3.TabIndex = 3
-        PictureBox3.TabStop = False
-        ' 
-        ' LinkLabel1
-        ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.BackColor = Color.Transparent
-        LinkLabel1.DisabledLinkColor = Color.Black
-        LinkLabel1.ForeColor = Color.Black
-        LinkLabel1.LinkColor = Color.Black
-        LinkLabel1.Location = New Point(356, 327)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(173, 15)
-        LinkLabel1.TabIndex = 4
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Forgot Username or Password ?"
-        ToolTip1.SetToolTip(LinkLabel1, "Click here if you forgot your Username or Password")
-        ' 
-        ' btnLogin
-        ' 
-        btnLogin.BackColor = Color.AliceBlue
-        btnLogin.Cursor = Cursors.Hand
-        btnLogin.Font = New Font("Mongolian Baiti", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        btnLogin.Location = New Point(417, 384)
-        btnLogin.Name = "btnLogin"
-        btnLogin.Size = New Size(138, 46)
-        btnLogin.TabIndex = 5
-        btnLogin.Text = "LOGIN"
-        ToolTip1.SetToolTip(btnLogin, "Click here to login")
-        btnLogin.UseVisualStyleBackColor = False
-        ' 
-        ' btnSignUp
-        ' 
-        btnSignUp.BackColor = Color.AliceBlue
-        btnSignUp.Cursor = Cursors.Hand
-        btnSignUp.Font = New Font("Mongolian Baiti", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        btnSignUp.Location = New Point(258, 384)
-        btnSignUp.Name = "btnSignUp"
-        btnSignUp.Size = New Size(138, 46)
-        btnSignUp.TabIndex = 7
-        btnSignUp.Text = "SIGN UP"
-        ToolTip1.SetToolTip(btnSignUp, "Click here to sign up")
-        btnSignUp.UseVisualStyleBackColor = False
-        ' 
-        ' lblTandC
-        ' 
-        lblTandC.AutoSize = True
-        lblTandC.LinkColor = Color.Black
-        lblTandC.Location = New Point(314, 453)
-        lblTandC.Name = "lblTandC"
-        lblTandC.Size = New Size(184, 15)
-        lblTandC.TabIndex = 8
-        lblTandC.TabStop = True
-        lblTandC.Text = "Terms and Condition and Privacy "
-        ToolTip1.SetToolTip(lblTandC, "Ts & Cs")
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Image = My.Resources.Resources.user__2_
-        PictureBox1.Location = New Point(334, 51)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(132, 127)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 9
-        PictureBox1.TabStop = False
-        ' 
-        ' chkRemember
-        ' 
-        chkRemember.AutoSize = True
-        chkRemember.Location = New Point(389, 345)
-        chkRemember.Name = "chkRemember"
-        chkRemember.Size = New Size(140, 19)
-        chkRemember.TabIndex = 10
-        chkRemember.Text = "Remember Username"
-        chkRemember.UseVisualStyleBackColor = True
-        ' 
-        ' LOGIN
+        ' Login
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.CadetBlue
-        ClientSize = New Size(802, 486)
-        Controls.Add(chkRemember)
-        Controls.Add(PictureBox1)
-        Controls.Add(lblTandC)
-        Controls.Add(btnSignUp)
-        Controls.Add(txtPassword)
-        Controls.Add(txtUsername)
-        Controls.Add(btnLogin)
-        Controls.Add(PictureBox3)
-        Controls.Add(PictureBox2)
-        Controls.Add(LinkLabel1)
-        Controls.Add(Label1)
-        Name = "LOGIN"
-        Text = "LOGIN"
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        ClientSize = New Size(882, 489)
+        ControlBox = False
+        Controls.Add(Panel1)
+        Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
+        Name = "Login"
+        StartPosition = FormStartPosition.CenterScreen
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        CType(pbClossApp, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
-    Friend WithEvents Label1 As Label
-    Friend WithEvents txtUsername As TextBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents txtPassword As TextBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents btnLogin As Button
-    Friend WithEvents btnSignUp As Button
-    Friend WithEvents lblTandC As LinkLabel
+
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents chkRemember As CheckBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnLogin As Button
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents btnCreateAccount As Button
+    Friend WithEvents pbClossApp As PictureBox
 End Class

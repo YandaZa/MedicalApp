@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class REGISTER
+Partial Class Register
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,224 +22,626 @@ Partial Class REGISTER
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
-        Label1 = New Label()
-        lblPhone = New Label()
-        txtFirstName = New TextBox()
-        txtLastName = New TextBox()
-        txtIDnum = New TextBox()
-        txtEmail = New TextBox()
-        txtPassword = New TextBox()
-        txtConfirm = New TextBox()
-        btnNext = New Button()
-        MaskedTextBox1 = New MaskedTextBox()
-        ComboBox1 = New ComboBox()
-        Label2 = New Label()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Register))
         PictureBox1 = New PictureBox()
+        Panel1 = New Panel()
+        pbCloseApp = New PictureBox()
+        btnLogin = New Button()
+        btnRegister = New Button()
+        GroupBox3 = New GroupBox()
+        txtNoKEmail = New TextBox()
+        txtNokPhone = New TextBox()
+        txtNoKSurname = New TextBox()
+        cbNoKTitle = New ComboBox()
+        Label19 = New Label()
+        txtNoKNames = New TextBox()
+        Label15 = New Label()
+        Label18 = New Label()
+        Label16 = New Label()
+        Label17 = New Label()
+        GroupBox2 = New GroupBox()
+        txtZip = New TextBox()
+        txtCity = New TextBox()
+        txtSuburb = New TextBox()
+        cbProvince = New ComboBox()
+        txtStreet = New TextBox()
+        Label14 = New Label()
+        Label13 = New Label()
+        Label12 = New Label()
+        Label11 = New Label()
+        Label1 = New Label()
+        Label20 = New Label()
+        GroupBox1 = New GroupBox()
+        cbUserGroup = New ComboBox()
+        Label10 = New Label()
+        cbTitle = New ComboBox()
+        txtConfirmPass = New TextBox()
+        Label7 = New Label()
+        Label6 = New Label()
+        Label5 = New Label()
+        Label8 = New Label()
+        Label9 = New Label()
+        Label4 = New Label()
         Label3 = New Label()
-        lblTandC = New LinkLabel()
-        ToolTip1 = New ToolTip(components)
+        Label2 = New Label()
+        txtID = New TextBox()
+        txtPass = New TextBox()
+        txtEmail = New TextBox()
+        txtMobile = New TextBox()
+        txtLastName = New TextBox()
+        txtNames = New TextBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
+        CType(pbCloseApp, ComponentModel.ISupportInitialize).BeginInit()
+        GroupBox3.SuspendLayout()
+        GroupBox2.SuspendLayout()
+        GroupBox1.SuspendLayout()
         SuspendLayout()
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.live
+        PictureBox1.Location = New Point(3, 0)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(263, 105)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 0
+        PictureBox1.TabStop = False
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.Teal
+        Panel1.Controls.Add(pbCloseApp)
+        Panel1.Controls.Add(btnLogin)
+        Panel1.Controls.Add(btnRegister)
+        Panel1.Controls.Add(GroupBox3)
+        Panel1.Controls.Add(GroupBox2)
+        Panel1.Controls.Add(Label20)
+        Panel1.Controls.Add(GroupBox1)
+        Panel1.Controls.Add(PictureBox1)
+        Panel1.Location = New Point(2, 2)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(879, 486)
+        Panel1.TabIndex = 0
+        ' 
+        ' pbCloseApp
+        ' 
+        pbCloseApp.Image = CType(resources.GetObject("pbCloseApp.Image"), Image)
+        pbCloseApp.Location = New Point(803, 23)
+        pbCloseApp.Name = "pbCloseApp"
+        pbCloseApp.Size = New Size(48, 46)
+        pbCloseApp.TabIndex = 22
+        pbCloseApp.TabStop = False
+        ' 
+        ' btnLogin
+        ' 
+        btnLogin.BackColor = Color.CadetBlue
+        btnLogin.FlatStyle = FlatStyle.Flat
+        btnLogin.Location = New Point(770, 450)
+        btnLogin.Name = "btnLogin"
+        btnLogin.Size = New Size(81, 25)
+        btnLogin.TabIndex = 21
+        btnLogin.Text = "Go to Login"
+        btnLogin.UseVisualStyleBackColor = False
+        ' 
+        ' btnRegister
+        ' 
+        btnRegister.BackColor = Color.CadetBlue
+        btnRegister.FlatStyle = FlatStyle.Flat
+        btnRegister.Location = New Point(22, 450)
+        btnRegister.Name = "btnRegister"
+        btnRegister.Size = New Size(81, 25)
+        btnRegister.TabIndex = 20
+        btnRegister.Text = "Register"
+        btnRegister.UseVisualStyleBackColor = False
+        ' 
+        ' GroupBox3
+        ' 
+        GroupBox3.Controls.Add(txtNoKEmail)
+        GroupBox3.Controls.Add(txtNokPhone)
+        GroupBox3.Controls.Add(txtNoKSurname)
+        GroupBox3.Controls.Add(cbNoKTitle)
+        GroupBox3.Controls.Add(Label19)
+        GroupBox3.Controls.Add(txtNoKNames)
+        GroupBox3.Controls.Add(Label15)
+        GroupBox3.Controls.Add(Label18)
+        GroupBox3.Controls.Add(Label16)
+        GroupBox3.Controls.Add(Label17)
+        GroupBox3.Location = New Point(579, 111)
+        GroupBox3.Name = "GroupBox3"
+        GroupBox3.Size = New Size(272, 320)
+        GroupBox3.TabIndex = 0
+        GroupBox3.TabStop = False
+        GroupBox3.Text = "NEXT OF KIN"
+        ' 
+        ' txtNoKEmail
+        ' 
+        txtNoKEmail.BackColor = Color.CadetBlue
+        txtNoKEmail.BorderStyle = BorderStyle.FixedSingle
+        txtNoKEmail.Location = New Point(113, 170)
+        txtNoKEmail.Name = "txtNoKEmail"
+        txtNoKEmail.Size = New Size(139, 23)
+        txtNoKEmail.TabIndex = 19
+        txtNoKEmail.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtNokPhone
+        ' 
+        txtNokPhone.BackColor = Color.CadetBlue
+        txtNokPhone.BorderStyle = BorderStyle.FixedSingle
+        txtNokPhone.Location = New Point(113, 112)
+        txtNokPhone.Name = "txtNokPhone"
+        txtNokPhone.Size = New Size(139, 23)
+        txtNokPhone.TabIndex = 17
+        txtNokPhone.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtNoKSurname
+        ' 
+        txtNoKSurname.BackColor = Color.CadetBlue
+        txtNoKSurname.BorderStyle = BorderStyle.FixedSingle
+        txtNoKSurname.Location = New Point(113, 83)
+        txtNoKSurname.Name = "txtNoKSurname"
+        txtNoKSurname.Size = New Size(139, 23)
+        txtNoKSurname.TabIndex = 16
+        txtNoKSurname.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' cbNoKTitle
+        ' 
+        cbNoKTitle.BackColor = Color.CadetBlue
+        cbNoKTitle.FormattingEnabled = True
+        cbNoKTitle.Items.AddRange(New Object() {"Mr", "Ms", "Mrs", "MD", "PhD", "Sir", "King", "Queen"})
+        cbNoKTitle.Location = New Point(113, 141)
+        cbNoKTitle.Name = "cbNoKTitle"
+        cbNoKTitle.Size = New Size(53, 23)
+        cbNoKTitle.TabIndex = 18
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoSize = True
+        Label19.Location = New Point(20, 172)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(39, 15)
+        Label19.TabIndex = 0
+        Label19.Text = "Email:"
+        ' 
+        ' txtNoKNames
+        ' 
+        txtNoKNames.BackColor = Color.CadetBlue
+        txtNoKNames.BorderStyle = BorderStyle.FixedSingle
+        txtNoKNames.Location = New Point(113, 54)
+        txtNoKNames.Name = "txtNoKNames"
+        txtNoKNames.Size = New Size(139, 23)
+        txtNoKNames.TabIndex = 15
+        txtNoKNames.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Location = New Point(20, 56)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(56, 15)
+        Label15.TabIndex = 0
+        Label15.Text = "Name(s):"
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Location = New Point(20, 114)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(45, 15)
+        Label18.TabIndex = 0
+        Label18.Text = "Phone:"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Location = New Point(20, 85)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(60, 15)
+        Label16.TabIndex = 0
+        Label16.Text = "Surname:"
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Location = New Point(20, 144)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(35, 15)
+        Label17.TabIndex = 0
+        Label17.Text = "Title:"
+        ' 
+        ' GroupBox2
+        ' 
+        GroupBox2.Controls.Add(txtZip)
+        GroupBox2.Controls.Add(txtCity)
+        GroupBox2.Controls.Add(txtSuburb)
+        GroupBox2.Controls.Add(cbProvince)
+        GroupBox2.Controls.Add(txtStreet)
+        GroupBox2.Controls.Add(Label14)
+        GroupBox2.Controls.Add(Label13)
+        GroupBox2.Controls.Add(Label12)
+        GroupBox2.Controls.Add(Label11)
+        GroupBox2.Controls.Add(Label1)
+        GroupBox2.Location = New Point(301, 111)
+        GroupBox2.Name = "GroupBox2"
+        GroupBox2.Size = New Size(272, 320)
+        GroupBox2.TabIndex = 0
+        GroupBox2.TabStop = False
+        GroupBox2.Text = "ADDRESS"
+        ' 
+        ' txtZip
+        ' 
+        txtZip.BackColor = Color.CadetBlue
+        txtZip.BorderStyle = BorderStyle.FixedSingle
+        txtZip.Location = New Point(102, 170)
+        txtZip.MaxLength = 4
+        txtZip.Name = "txtZip"
+        txtZip.Size = New Size(53, 23)
+        txtZip.TabIndex = 14
+        txtZip.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtCity
+        ' 
+        txtCity.BackColor = Color.CadetBlue
+        txtCity.BorderStyle = BorderStyle.FixedSingle
+        txtCity.Location = New Point(102, 112)
+        txtCity.Name = "txtCity"
+        txtCity.Size = New Size(153, 23)
+        txtCity.TabIndex = 12
+        txtCity.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtSuburb
+        ' 
+        txtSuburb.BackColor = Color.CadetBlue
+        txtSuburb.BorderStyle = BorderStyle.FixedSingle
+        txtSuburb.Location = New Point(102, 83)
+        txtSuburb.Name = "txtSuburb"
+        txtSuburb.Size = New Size(153, 23)
+        txtSuburb.TabIndex = 11
+        txtSuburb.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' cbProvince
+        ' 
+        cbProvince.BackColor = Color.CadetBlue
+        cbProvince.FormattingEnabled = True
+        cbProvince.Items.AddRange(New Object() {"Eastern Cape", "Gauteng", "Kwa-Zulu Natal", "Limpopo", "Mpumalanga", "North West", "Northern Cape", "Western Cape"})
+        cbProvince.Location = New Point(102, 141)
+        cbProvince.Name = "cbProvince"
+        cbProvince.Size = New Size(153, 23)
+        cbProvince.TabIndex = 13
+        ' 
+        ' txtStreet
+        ' 
+        txtStreet.BackColor = Color.CadetBlue
+        txtStreet.BorderStyle = BorderStyle.FixedSingle
+        txtStreet.Location = New Point(102, 54)
+        txtStreet.Name = "txtStreet"
+        txtStreet.Size = New Size(153, 23)
+        txtStreet.TabIndex = 10
+        txtStreet.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Location = New Point(18, 172)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(55, 15)
+        Label14.TabIndex = 0
+        Label14.Text = "Zip Code"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Location = New Point(18, 144)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(56, 15)
+        Label13.TabIndex = 0
+        Label13.Text = "Province"
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Location = New Point(18, 114)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(63, 15)
+        Label12.TabIndex = 0
+        Label12.Text = "Town/City"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Location = New Point(18, 85)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(47, 15)
+        Label11.TabIndex = 0
+        Label11.Text = "Suburb"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Mongolian Baiti", 26.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.ForeColor = Color.Black
-        Label1.Location = New Point(350, 21)
+        Label1.Location = New Point(18, 56)
         Label1.Name = "Label1"
-        Label1.Size = New Size(158, 37)
+        Label1.Size = New Size(43, 15)
         Label1.TabIndex = 0
-        Label1.Text = "SIGN UP"
+        Label1.Text = "Street"
         ' 
-        ' lblPhone
+        ' Label20
         ' 
-        lblPhone.AutoSize = True
-        lblPhone.BackColor = Color.Transparent
-        lblPhone.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        lblPhone.ForeColor = Color.Black
-        lblPhone.Location = New Point(169, 319)
-        lblPhone.Name = "lblPhone"
-        lblPhone.Size = New Size(82, 15)
-        lblPhone.TabIndex = 9
-        lblPhone.Text = "Phone/ Home"
+        Label20.AutoSize = True
+        Label20.Location = New Point(599, 455)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(148, 15)
+        Label20.TabIndex = 0
+        Label20.Text = "Already have an acoount?"
         ' 
-        ' txtFirstName
+        ' GroupBox1
         ' 
-        txtFirstName.BackColor = Color.White
-        txtFirstName.Location = New Point(169, 122)
-        txtFirstName.Name = "txtFirstName"
-        txtFirstName.PlaceholderText = "First Name(s)"
-        txtFirstName.Size = New Size(206, 23)
-        txtFirstName.TabIndex = 10
-        ToolTip1.SetToolTip(txtFirstName, "Enter your first name(s)")
+        GroupBox1.Controls.Add(cbUserGroup)
+        GroupBox1.Controls.Add(Label10)
+        GroupBox1.Controls.Add(cbTitle)
+        GroupBox1.Controls.Add(txtConfirmPass)
+        GroupBox1.Controls.Add(Label7)
+        GroupBox1.Controls.Add(Label6)
+        GroupBox1.Controls.Add(Label5)
+        GroupBox1.Controls.Add(Label8)
+        GroupBox1.Controls.Add(Label9)
+        GroupBox1.Controls.Add(Label4)
+        GroupBox1.Controls.Add(Label3)
+        GroupBox1.Controls.Add(Label2)
+        GroupBox1.Controls.Add(txtID)
+        GroupBox1.Controls.Add(txtPass)
+        GroupBox1.Controls.Add(txtEmail)
+        GroupBox1.Controls.Add(txtMobile)
+        GroupBox1.Controls.Add(txtLastName)
+        GroupBox1.Controls.Add(txtNames)
+        GroupBox1.Location = New Point(23, 111)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(272, 320)
+        GroupBox1.TabIndex = 0
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "REGISTRANT INFORMATION"
         ' 
-        ' txtLastName
+        ' cbUserGroup
         ' 
-        txtLastName.BackColor = Color.White
-        txtLastName.Location = New Point(477, 122)
-        txtLastName.Name = "txtLastName"
-        txtLastName.PlaceholderText = "Last Name"
-        txtLastName.Size = New Size(206, 23)
-        txtLastName.TabIndex = 11
-        ToolTip1.SetToolTip(txtLastName, "Enter your last name")
+        cbUserGroup.BackColor = Color.CadetBlue
+        cbUserGroup.FormattingEnabled = True
+        cbUserGroup.Items.AddRange(New Object() {"Admin", "Patient", "Doctor"})
+        cbUserGroup.Location = New Point(124, 286)
+        cbUserGroup.Name = "cbUserGroup"
+        cbUserGroup.Size = New Size(53, 23)
+        cbUserGroup.TabIndex = 9
         ' 
-        ' txtIDnum
+        ' Label10
         ' 
-        txtIDnum.BackColor = Color.White
-        txtIDnum.Location = New Point(477, 172)
-        txtIDnum.Name = "txtIDnum"
-        txtIDnum.PlaceholderText = "ID Number"
-        txtIDnum.Size = New Size(206, 23)
-        txtIDnum.TabIndex = 12
-        ToolTip1.SetToolTip(txtIDnum, "Enter your identity number")
+        Label10.AutoSize = True
+        Label10.Location = New Point(18, 56)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(56, 15)
+        Label10.TabIndex = 0
+        Label10.Text = "Name(s):"
         ' 
-        ' txtEmail
+        ' cbTitle
         ' 
-        txtEmail.BackColor = Color.White
-        txtEmail.Location = New Point(169, 272)
-        txtEmail.Name = "txtEmail"
-        txtEmail.PlaceholderText = "Email Address"
-        txtEmail.Size = New Size(206, 23)
-        txtEmail.TabIndex = 13
-        ToolTip1.SetToolTip(txtEmail, "Enter your email address")
+        cbTitle.BackColor = Color.CadetBlue
+        cbTitle.FormattingEnabled = True
+        cbTitle.Items.AddRange(New Object() {"Mr", "Ms", "Mrs", "MD", "PhD", "Sir", "King", "Queen"})
+        cbTitle.Location = New Point(124, 141)
+        cbTitle.Name = "cbTitle"
+        cbTitle.Size = New Size(53, 23)
+        cbTitle.TabIndex = 4
         ' 
-        ' txtPassword
+        ' txtConfirmPass
         ' 
-        txtPassword.BackColor = Color.White
-        txtPassword.Location = New Point(169, 221)
-        txtPassword.Name = "txtPassword"
-        txtPassword.PlaceholderText = "Password"
-        txtPassword.Size = New Size(206, 23)
-        txtPassword.TabIndex = 14
-        ToolTip1.SetToolTip(txtPassword, "Enter password")
+        txtConfirmPass.BackColor = Color.CadetBlue
+        txtConfirmPass.BorderStyle = BorderStyle.FixedSingle
+        txtConfirmPass.Location = New Point(124, 257)
+        txtConfirmPass.Name = "txtConfirmPass"
+        txtConfirmPass.Size = New Size(129, 23)
+        txtConfirmPass.TabIndex = 8
+        txtConfirmPass.TextAlign = HorizontalAlignment.Center
         ' 
-        ' txtConfirm
+        ' Label7
         ' 
-        txtConfirm.BackColor = Color.White
-        txtConfirm.Location = New Point(477, 221)
-        txtConfirm.Name = "txtConfirm"
-        txtConfirm.PlaceholderText = "Confirm Password"
-        txtConfirm.Size = New Size(206, 23)
-        txtConfirm.TabIndex = 15
-        ToolTip1.SetToolTip(txtConfirm, "Confirm your password")
+        Label7.AutoSize = True
+        Label7.Location = New Point(18, 201)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(39, 15)
+        Label7.TabIndex = 0
+        Label7.Text = "Email:"
         ' 
-        ' btnNext
+        ' Label6
         ' 
-        btnNext.Location = New Point(360, 394)
-        btnNext.Name = "btnNext"
-        btnNext.Size = New Size(126, 42)
-        btnNext.TabIndex = 19
-        btnNext.Text = "NEXT"
-        ToolTip1.SetToolTip(btnNext, "Click for next")
-        btnNext.UseVisualStyleBackColor = True
+        Label6.AutoSize = True
+        Label6.Location = New Point(18, 172)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(45, 15)
+        Label6.TabIndex = 0
+        Label6.Text = "Phone:"
         ' 
-        ' MaskedTextBox1
+        ' Label5
         ' 
-        MaskedTextBox1.Location = New Point(169, 337)
-        MaskedTextBox1.Mask = "(999) 000-0000"
-        MaskedTextBox1.Name = "MaskedTextBox1"
-        MaskedTextBox1.Size = New Size(206, 23)
-        MaskedTextBox1.TabIndex = 23
-        ToolTip1.SetToolTip(MaskedTextBox1, "Enter phone/home number")
+        Label5.AutoSize = True
+        Label5.Location = New Point(18, 144)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(35, 15)
+        Label5.TabIndex = 0
+        Label5.Text = "Title:"
         ' 
-        ' ComboBox1
+        ' Label8
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Mr.", "Mrs.", "Miss.", "Ms.", "Other.", "Prof.", "Dr."})
-        ComboBox1.Location = New Point(169, 172)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(206, 23)
-        ComboBox1.TabIndex = 24
-        ToolTip1.SetToolTip(ComboBox1, "Select your title")
+        Label8.AutoSize = True
+        Label8.Location = New Point(18, 289)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(74, 15)
+        Label8.TabIndex = 0
+        Label8.Text = "User Group:"
         ' 
-        ' Label2
+        ' Label9
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(169, 154)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(29, 15)
-        Label2.TabIndex = 25
-        Label2.Text = "Title"
+        Label9.AutoSize = True
+        Label9.Location = New Point(18, 259)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(105, 15)
+        Label9.TabIndex = 0
+        Label9.Text = "Repeat Password:"
         ' 
-        ' PictureBox1
+        ' Label4
         ' 
-        PictureBox1.Image = My.Resources.Resources.user
-        PictureBox1.Location = New Point(54, 52)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(43, 39)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 26
-        PictureBox1.TabStop = False
+        Label4.AutoSize = True
+        Label4.Location = New Point(18, 230)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(62, 15)
+        Label4.TabIndex = 0
+        Label4.Text = "Password:"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.ForeColor = Color.Black
-        Label3.Location = New Point(103, 90)
+        Label3.Location = New Point(18, 114)
         Label3.Name = "Label3"
-        Label3.Size = New Size(82, 17)
-        Label3.TabIndex = 27
-        Label3.Text = "Get started..."
+        Label3.Size = New Size(72, 15)
+        Label3.TabIndex = 0
+        Label3.Text = "ID Number:"
         ' 
-        ' lblTandC
+        ' Label2
         ' 
-        lblTandC.AutoSize = True
-        lblTandC.LinkColor = Color.Black
-        lblTandC.Location = New Point(336, 448)
-        lblTandC.Name = "lblTandC"
-        lblTandC.Size = New Size(184, 15)
-        lblTandC.TabIndex = 28
-        lblTandC.TabStop = True
-        lblTandC.Text = "Terms and Condition and Privacy "
-        ToolTip1.SetToolTip(lblTandC, "click here to view the terms & conditions and privacy")
+        Label2.AutoSize = True
+        Label2.Location = New Point(18, 85)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(60, 15)
+        Label2.TabIndex = 0
+        Label2.Text = "Surname:"
         ' 
-        ' REGISTER
+        ' txtID
+        ' 
+        txtID.BackColor = Color.CadetBlue
+        txtID.BorderStyle = BorderStyle.FixedSingle
+        txtID.Location = New Point(124, 112)
+        txtID.MaxLength = 13
+        txtID.Name = "txtID"
+        txtID.Size = New Size(129, 23)
+        txtID.TabIndex = 3
+        txtID.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtPass
+        ' 
+        txtPass.BackColor = Color.CadetBlue
+        txtPass.BorderStyle = BorderStyle.FixedSingle
+        txtPass.Location = New Point(124, 228)
+        txtPass.Name = "txtPass"
+        txtPass.Size = New Size(129, 23)
+        txtPass.TabIndex = 7
+        txtPass.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtEmail
+        ' 
+        txtEmail.BackColor = Color.CadetBlue
+        txtEmail.BorderStyle = BorderStyle.FixedSingle
+        txtEmail.Location = New Point(124, 199)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(129, 23)
+        txtEmail.TabIndex = 6
+        txtEmail.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtMobile
+        ' 
+        txtMobile.BackColor = Color.CadetBlue
+        txtMobile.BorderStyle = BorderStyle.FixedSingle
+        txtMobile.Location = New Point(124, 170)
+        txtMobile.Name = "txtMobile"
+        txtMobile.Size = New Size(129, 23)
+        txtMobile.TabIndex = 5
+        txtMobile.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtLastName
+        ' 
+        txtLastName.BackColor = Color.CadetBlue
+        txtLastName.BorderStyle = BorderStyle.FixedSingle
+        txtLastName.Location = New Point(124, 83)
+        txtLastName.Name = "txtLastName"
+        txtLastName.Size = New Size(129, 23)
+        txtLastName.TabIndex = 2
+        txtLastName.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' txtNames
+        ' 
+        txtNames.BackColor = Color.CadetBlue
+        txtNames.BorderStyle = BorderStyle.FixedSingle
+        txtNames.Location = New Point(124, 54)
+        txtNames.Name = "txtNames"
+        txtNames.Size = New Size(129, 23)
+        txtNames.TabIndex = 1
+        txtNames.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Register
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.CadetBlue
-        ClientSize = New Size(865, 478)
-        Controls.Add(lblTandC)
-        Controls.Add(Label3)
-        Controls.Add(PictureBox1)
-        Controls.Add(Label2)
-        Controls.Add(ComboBox1)
-        Controls.Add(MaskedTextBox1)
-        Controls.Add(btnNext)
-        Controls.Add(txtConfirm)
-        Controls.Add(txtPassword)
-        Controls.Add(txtEmail)
-        Controls.Add(txtIDnum)
-        Controls.Add(txtLastName)
-        Controls.Add(txtFirstName)
-        Controls.Add(lblPhone)
-        Controls.Add(Label1)
-        Name = "REGISTER"
-        Text = "REGISTER"
+        ClientSize = New Size(882, 489)
+        ControlBox = False
+        Controls.Add(Panel1)
+        Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
+        Name = "Register"
+        StartPosition = FormStartPosition.CenterScreen
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        CType(pbCloseApp, ComponentModel.ISupportInitialize).EndInit()
+        GroupBox3.ResumeLayout(False)
+        GroupBox3.PerformLayout()
+        GroupBox2.ResumeLayout(False)
+        GroupBox2.PerformLayout()
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents lblPhone As Label
-    Friend WithEvents txtFirstName As TextBox
-    Friend WithEvents txtLastName As TextBox
-    Friend WithEvents txtIDnum As TextBox
-    Friend WithEvents txtEmail As TextBox
-    Friend WithEvents txtPassword As TextBox
-    Friend WithEvents txtConfirm As TextBox
-    Friend WithEvents btnNext As Button
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents txtNames As TextBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents txtNoKEmail As TextBox
+    Friend WithEvents txtNokPhone As TextBox
+    Friend WithEvents txtNoKSurname As TextBox
+    Friend WithEvents cbNoKTitle As ComboBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents txtNoKNames As TextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents txtZip As TextBox
+    Friend WithEvents txtCity As TextBox
+    Friend WithEvents txtSuburb As TextBox
+    Friend WithEvents cbProvince As ComboBox
+    Friend WithEvents txtStreet As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents cbUserGroup As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents cbTitle As ComboBox
+    Friend WithEvents txtConfirmPass As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents lblTandC As LinkLabel
-    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents txtPass As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtMobile As TextBox
+    Friend WithEvents txtLastName As TextBox
+    Friend WithEvents btnRegister As Button
+    Friend WithEvents pbCloseApp As PictureBox
+    Friend WithEvents btnLogin As Button
+    Friend WithEvents Label20 As Label
 End Class

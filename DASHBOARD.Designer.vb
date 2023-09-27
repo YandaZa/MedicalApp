@@ -31,7 +31,7 @@ Partial Class DASHBOARD
         PictureBox8 = New PictureBox()
         btnContactUs = New Button()
         Panel2 = New Panel()
-        Label1 = New Label()
+        lblLoggedUser = New Label()
         btnInformation = New Button()
         btnAppointment = New Button()
         btnHotline = New Button()
@@ -89,18 +89,19 @@ Partial Class DASHBOARD
         Panel1.Controls.Add(btnHelp)
         Panel1.Controls.Add(PictureBox8)
         Panel1.Controls.Add(btnContactUs)
-        Panel1.Location = New Point(1, 1)
+        Panel1.Location = New Point(3, 0)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(880, 67)
         Panel1.TabIndex = 0
         ' 
         ' btnAboutUs
         ' 
-        btnAboutUs.BackColor = Color.PowderBlue
+        btnAboutUs.BackColor = Color.CadetBlue
         btnAboutUs.Cursor = Cursors.Hand
+        btnAboutUs.FlatStyle = FlatStyle.Flat
         btnAboutUs.Location = New Point(370, 11)
         btnAboutUs.Name = "btnAboutUs"
-        btnAboutUs.Size = New Size(105, 23)
+        btnAboutUs.Size = New Size(105, 32)
         btnAboutUs.TabIndex = 26
         btnAboutUs.Text = "A&BOUT US"
         ToolTip1.SetToolTip(btnAboutUs, "About Us..")
@@ -128,11 +129,12 @@ Partial Class DASHBOARD
         ' 
         ' btnHelp
         ' 
-        btnHelp.BackColor = Color.PowderBlue
+        btnHelp.BackColor = Color.CadetBlue
         btnHelp.Cursor = Cursors.Hand
+        btnHelp.FlatStyle = FlatStyle.Flat
         btnHelp.Location = New Point(591, 11)
         btnHelp.Name = "btnHelp"
-        btnHelp.Size = New Size(105, 23)
+        btnHelp.Size = New Size(105, 32)
         btnHelp.TabIndex = 0
         btnHelp.Text = "&HELP!"
         ToolTip1.SetToolTip(btnHelp, "Help!")
@@ -150,11 +152,12 @@ Partial Class DASHBOARD
         ' 
         ' btnContactUs
         ' 
-        btnContactUs.BackColor = Color.PowderBlue
+        btnContactUs.BackColor = Color.CadetBlue
         btnContactUs.Cursor = Cursors.Hand
+        btnContactUs.FlatStyle = FlatStyle.Flat
         btnContactUs.Location = New Point(480, 11)
         btnContactUs.Name = "btnContactUs"
-        btnContactUs.Size = New Size(105, 23)
+        btnContactUs.Size = New Size(105, 32)
         btnContactUs.TabIndex = 9
         btnContactUs.Text = "CONTACT &US"
         ToolTip1.SetToolTip(btnContactUs, "Contact Us")
@@ -162,25 +165,26 @@ Partial Class DASHBOARD
         ' 
         ' Panel2
         ' 
-        Panel2.Controls.Add(Label1)
-        Panel2.Location = New Point(1, 69)
+        Panel2.Controls.Add(lblLoggedUser)
+        Panel2.Location = New Point(3, 73)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(880, 34)
         Panel2.TabIndex = 1
         ' 
-        ' Label1
+        ' lblLoggedUser
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(3, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(158, 15)
-        Label1.TabIndex = 0
-        Label1.Text = "Ms Wendy Athayanda Zakhe"
+        lblLoggedUser.AutoSize = True
+        lblLoggedUser.Location = New Point(3, 9)
+        lblLoggedUser.Name = "lblLoggedUser"
+        lblLoggedUser.Size = New Size(158, 15)
+        lblLoggedUser.TabIndex = 0
+        lblLoggedUser.Text = "Ms Wendy Athayanda Zakhe"
         ' 
         ' btnInformation
         ' 
-        btnInformation.BackColor = Color.PowderBlue
+        btnInformation.BackColor = Color.CadetBlue
         btnInformation.Cursor = Cursors.Hand
+        btnInformation.FlatStyle = FlatStyle.Flat
         btnInformation.Location = New Point(27, 77)
         btnInformation.Name = "btnInformation"
         btnInformation.Size = New Size(114, 23)
@@ -191,8 +195,9 @@ Partial Class DASHBOARD
         ' 
         ' btnAppointment
         ' 
-        btnAppointment.BackColor = Color.PowderBlue
+        btnAppointment.BackColor = Color.CadetBlue
         btnAppointment.Cursor = Cursors.Hand
+        btnAppointment.FlatStyle = FlatStyle.Flat
         btnAppointment.Location = New Point(19, 81)
         btnAppointment.Name = "btnAppointment"
         btnAppointment.Size = New Size(114, 23)
@@ -203,8 +208,9 @@ Partial Class DASHBOARD
         ' 
         ' btnHotline
         ' 
-        btnHotline.BackColor = Color.PowderBlue
+        btnHotline.BackColor = Color.CadetBlue
         btnHotline.Cursor = Cursors.Hand
+        btnHotline.FlatStyle = FlatStyle.Flat
         btnHotline.Location = New Point(30, 81)
         btnHotline.Name = "btnHotline"
         btnHotline.Size = New Size(114, 22)
@@ -215,8 +221,9 @@ Partial Class DASHBOARD
         ' 
         ' btnReminder
         ' 
-        btnReminder.BackColor = Color.PowderBlue
+        btnReminder.BackColor = Color.CadetBlue
         btnReminder.Cursor = Cursors.Hand
+        btnReminder.FlatStyle = FlatStyle.Flat
         btnReminder.Location = New Point(12, 80)
         btnReminder.Name = "btnReminder"
         btnReminder.Size = New Size(114, 23)
@@ -227,8 +234,9 @@ Partial Class DASHBOARD
         ' 
         ' btnNavigate
         ' 
-        btnNavigate.BackColor = Color.PowderBlue
+        btnNavigate.BackColor = Color.CadetBlue
         btnNavigate.Cursor = Cursors.Hand
+        btnNavigate.FlatStyle = FlatStyle.Flat
         btnNavigate.Location = New Point(174, 79)
         btnNavigate.Name = "btnNavigate"
         btnNavigate.Size = New Size(114, 23)
@@ -239,13 +247,14 @@ Partial Class DASHBOARD
         ' 
         ' btnLogout
         ' 
-        btnLogout.BackColor = Color.PowderBlue
+        btnLogout.BackColor = Color.CadetBlue
         btnLogout.Cursor = Cursors.Hand
+        btnLogout.FlatStyle = FlatStyle.Flat
         btnLogout.Location = New Point(771, 440)
         btnLogout.Name = "btnLogout"
         btnLogout.Size = New Size(99, 37)
         btnLogout.TabIndex = 9
-        btnLogout.Text = "LOG&OUT"
+        btnLogout.Text = "LOG &OUT"
         ToolTip1.SetToolTip(btnLogout, "Click to logout")
         btnLogout.UseVisualStyleBackColor = False
         ' 
@@ -409,8 +418,9 @@ Partial Class DASHBOARD
         ' 
         ' btnProfile
         ' 
-        btnProfile.BackColor = Color.PowderBlue
+        btnProfile.BackColor = Color.CadetBlue
         btnProfile.Cursor = Cursors.Hand
+        btnProfile.FlatStyle = FlatStyle.Flat
         btnProfile.Location = New Point(14, 81)
         btnProfile.Name = "btnProfile"
         btnProfile.Size = New Size(114, 23)
@@ -469,10 +479,11 @@ Partial Class DASHBOARD
         ' 
         ' DASHBOARD
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.CadetBlue
+        BackColor = Color.Teal
         ClientSize = New Size(882, 489)
+        ControlBox = False
         Controls.Add(Label9)
         Controls.Add(Panel3)
         Controls.Add(Label3)
@@ -485,8 +496,9 @@ Partial Class DASHBOARD
         Controls.Add(btnLogout)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "DASHBOARD"
-        Text = "DASHBOARD"
+        StartPosition = FormStartPosition.CenterScreen
         Panel1.ResumeLayout(False)
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
@@ -531,7 +543,7 @@ Partial Class DASHBOARD
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblLoggedUser As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel6 As Panel
